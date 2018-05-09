@@ -37,16 +37,16 @@ return array(
 	),
 
 	'skip-plugins' => array(
-		'runtime' => '[=<plugin>]',
+		'runtime' => '[=<plugins>]',
 		'file' => '<list>',
-		'desc' => 'Skip loading all or some plugins. Note: mu-plugins are still loaded.',
+		'desc' => 'Skip loading all plugins, or a comma-separated list of plugins. Note: mu-plugins are still loaded.',
 		'default' => '',
 	),
 
 	'skip-themes' => array(
-		'runtime' => '[=<theme>]',
+		'runtime' => '[=<themes>]',
 		'file' => '<list>',
-		'desc' => 'Skip loading all or some themes.',
+		'desc' => 'Skip loading all themes, or a comma-separated list of themes.',
 		'default' => '',
 	),
 
@@ -82,7 +82,7 @@ return array(
 		'runtime' => '[=<group>]',
 		'file' => '<group>',
 		'default' => false,
-		'desc' => 'Show all PHP errors; add verbosity to WP-CLI bootstrap.',
+		'desc' => 'Show all PHP errors and add verbosity to WP-CLI output. Built-in groups include: bootstrap, commandfactory, and help.',
 	),
 
 	'prompt' => array(
